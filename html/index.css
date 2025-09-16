@@ -47,5 +47,32 @@ body {
 }
 
 #abstract .title {
-  font-size: 20pt;
+  text-align: center;
+  font-size: 24pt;
 }
+
+
+#reference {
+  background: #f0f0f0;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#reference p {
+  width: 70%;
+  background: inherit;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#reference .title {
+  text-align: center;
+  font-size: 24pt;
+}
+
+
+#reference .bibtex {
+  font-family: monospace;
+  white-space: pre-wrap;
+  }
