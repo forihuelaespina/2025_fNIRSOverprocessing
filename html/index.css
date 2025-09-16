@@ -42,4 +42,5 @@ body {
 #abstract p {
   width: 70%;
   background: inherit;
+  margin: 0 auto;
 }
