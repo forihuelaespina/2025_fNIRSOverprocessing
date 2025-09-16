@@ -1,0 +1,38 @@
+body {
+  background: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 20px;
+}
+
+#abstract {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#header .title {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+#header .authors,
+#header .affiliation {
+  margin: 5px 0;
+}
+
+#header .buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  background: #eee;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12pt;
+}
