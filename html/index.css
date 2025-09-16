@@ -38,3 +38,7 @@ body {
   margin: 20px auto;
   text-align: justify;
 }
+
+#abstract p {
+  background: inherit;
+}
