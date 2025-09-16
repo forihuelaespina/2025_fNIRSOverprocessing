@@ -1,0 +1,96 @@
+\documentclass[12pt]{spieman}  % 12pt font required by SPIE;
+%\documentclass[a4paper,12pt]{spieman}  % use this instead for A4 paper
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{lineno}
+\linenumbers
+
+%\usepackage{amsthm}
+%\newtheorem{definition}{Definition}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{corollary}{Corollary}[theorem]
+%\newtheorem{lemma}[theorem]{Lemma}
+
+\usepackage{color, colortbl} %For colored text
+\usepackage{xcolor} %For defining new colors e.g. for equations
+\definecolor{black}{RGB}{0,0,0}
+\definecolor{equationscolor}{RGB}{0,0,0}
+\usepackage{tikz} %create graphics programatically
+\usetikzlibrary{arrows,shapes}
+\usepackage{pgfplots} %Complements tikz to create scientific graphs e.g. use of axis etc.
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption} %Replace subfig but requires importing package caption explicitly. Provides environment \subfigure
+%NOTE: Subfig and subcaption are incompatible. Only one can be used at a time.
+\usepackage[normalem]{ulem} %for \sout
+
+\newcommand{\mediaDir}{media}
+
+\usepackage[framemethod=TikZ]{mdframed} %Permits shading entire paragraphs e.g. as in my new environment for exercises.
+
+
+\newsavebox{\selvestebox}
+\newenvironment{alertblock}
+  {\begin{lrbox}{\selvestebox}%
+   \begin{minipage}{%\dimexpr\columnwidth-2\fboxsep\relax
+   0.9\linewidth
+   }
+   \color{black}}
+  {\end{minipage}\end{lrbox} %
+   \begin{center}
+   %\setlength{\fboxsep}{0pt}
+   %\fbox{
+   	\colorbox[HTML]{EEEEEE}{\usebox{\selvestebox}}
+    %}
+   \end{center}}
+   	%Solution found in: https://tex.stackexchange.com/questions/29769/colored-box-in-new-environment
+    	%For some reason it interferes with \everymath so the colouring of the maths affects the text here
+
+
+
+
+
+
+
+\title{Overprocessing in functional Near-Infrared Spectroscopy (fNIRS)}
+
+\author[a]{Felipe Orihuela-Espina}
+\affil[a]{University of Birmingham, School of Computer Science, Edgbaston, Birmingham, United Kingdom}
+%\affil[b]{Company Name, Street Address, City, Country}
+
+\renewcommand{\cftdotsep}{\cftnodots}
+\cftpagenumbersoff{figure}
+\cftpagenumbersoff{table} 
+\begin{document} 
+\maketitle
+
+\begin{abstract}
+\textbf{Significance}: %Provide the rationale or motivation for the work (i.e., its broad impact).
+Overprocesssing occurs when we exceed on reasonable processing to extract the information from observations. Overprocessing can severely affect interpretation of results, e.g. increasing false positives.\\
+\textbf{Aim}: %Briefly describe the study, tools, or systems used.
+This paper introduces the problem of overprocessing to the fNIRS community.\\
+\textbf{Approach}: %Briefly describe the materials and methods used.
+The theoretical underpinnings revealing the existence of the problem are given, and the problem is formally stated. Two major avenues to approach the problem are presented.\\
+\textbf{Results}: %Provide a core summary of study numbers, analyses, discoveries, or data descriptions.
+The transfer function is discussed as a plausible and non-trivial processing and analysis pipeline that from an arbitrary experimental observation $\color{equationscolor}\mathbf{x}_i$ lands us into the hypothesis $\color{equationscolor}\mathbf{x}_h$. The analysis of such transfer function and the analysis of the problem geometry are discussed as potential ways to constraint the problem.\\
+\textbf{Conclusions}: %An interpretive statement that summarizes the approach and results of the work.
+At present, the fNIRS community lacks criteria to alleviate the risk of overprocessing. This draft intends to raise awareness on this largely unknown issue. 
+\end{abstract}
+
+% Include a list of up to six keywords after the abstract
+\keywords{fNIRS, overprocessing, data analysis, signal processing, transfer function}
+
+% Include email contact information for corresponding author
+{\noindent \footnotesize\textbf{*}Felipe Orihuela-Espina,  \linkable{f.orihuela-espina@bham.ac.uk} }
+
+\begin{spacing}{2}   % use double spacing for rest of manuscript
+
+\begin{center}
+\huge \textcolor{red}{Coming soon!}
+\end{center}
+
+
+\end{spacing}
+\end{document}
