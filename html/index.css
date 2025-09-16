@@ -39,16 +39,16 @@ body {
   text-align: center;
 }
 
+#abstract .title {
+  text-align: center;
+  font-size: 24pt;
+}
+
 #abstract p {
   width: 70%;
   background: inherit;
   text-align: justify;
   margin: 0 auto;
-}
-
-#abstract .title {
-  text-align: center;
-  font-size: 24pt;
 }
 
 
@@ -59,6 +59,11 @@ body {
   text-align: center;
 }
 
+#reference .title {
+  text-align: center;
+  font-size: 24pt;
+}
+
 #reference p {
   width: 70%;
   background: inherit;
@@ -66,13 +71,12 @@ body {
   margin: 0 auto;
 }
 
-#reference .title {
-  text-align: center;
-  font-size: 24pt;
-}
-
 
 #reference .bibtex {
   font-family: monospace;
+  text-align: left;
   white-space: pre-wrap;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
   }
