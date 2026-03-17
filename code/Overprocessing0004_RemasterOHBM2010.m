@@ -3,7 +3,14 @@ function Overprocessing0004_RemasterOHBM2010
 %
 % Remasters the OHBM 2010 Fig 2.
 %
-% Copyright 2025
+%% Remarks
+%
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -14,6 +21,12 @@ function Overprocessing0004_RemasterOHBM2010
 %
 % 8-Sep-2025: FOE
 %   + File created.
+%
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 

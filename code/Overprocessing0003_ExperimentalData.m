@@ -23,7 +23,14 @@ function Overprocessing0003_ExperimentalData
 %
 %
 %
-% Copyright 2025
+%% Remarks
+%
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -37,6 +44,11 @@ function Overprocessing0003_ExperimentalData
 %
 % 3-Oct-2025: FOE
 %   + Re-run to simplify the output figure
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 
@@ -73,7 +85,6 @@ r = r.import([srcFolder 'sub-' num2str(iSubject,'%02d') filesep ...
     'nirs' filesep filename]); %Load the .snirf file.
 nimg = r.convert(); %Convert to Hb.
 
-
 %The following info is available from companion .json file;
 %
 % sub-01_ses-left2s_task-FRESHMOTOR_nirs.json
@@ -107,8 +118,8 @@ for iCase = 1:3
     nEvents = size(cevents,1);
     boxcar  = zeros(nSamples,1);
     for iEv = 1:nEvents
-        boxcar(cevents.onsets(iEv):cevents.onsets(iEv)+cevents.durations(iEv)) = ...
-            cevents.amplitudes(iEv);
+        boxcar(cevents(iEv).onsets:cevents(iEv).onsets+cevents(iEv).durations) = ...
+            cevents(iEv).amplitudes;
     end
 
     t   = (0:1/SamplingFrequency:30);
@@ -201,7 +212,7 @@ for iCase = 1:3
     for iAx = 1:3
         axes(hAxis(iAx));
         tmpYLim = ylim();
-        line(([cevents.onsets cevents.onsets].*(1/SamplingFrequency))',...
+        line(([[cevents.onsets]' [cevents.onsets]'].*(1/SamplingFrequency))',...
             repmat([tmpYLim(1) tmpYLim(2)],nEvents,1)',...
             'Color','k',...
             'LineStyle','-','LineWidth',opt.lineWidth);
@@ -210,10 +221,10 @@ for iCase = 1:3
     legend(hLegend(1,:),{'Hypothesis','Processed data'},'FontSize',opt.fontSize);
 
 
-    mySaveFig(hFig,['..' filesep 'media' filesep ...
-        'Overprocessing0003_ExperimentalData' ...
-        num2str(opt.case,'%04d')]);
-    close(gcf);
+    % mySaveFig(hFig,['..' filesep 'media' filesep ...
+    %     'Overprocessing0003_ExperimentalData' ...
+    %     num2str(opt.case,'%04d')]);
+    % close(gcf);
 
     clear hLegend
 

@@ -4,7 +4,14 @@ function Overprocessing0006_IntegrationalAnalysis
 %
 % Illustrates the overprocessing in the case of integrational analysis.
 %
-% Copyright 2025
+%% Remarks
+%
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -16,6 +23,11 @@ function Overprocessing0006_IntegrationalAnalysis
 % 8-Oct-2025: FOE
 %   + File created.
 %
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 
@@ -173,10 +185,10 @@ for iCase = 1:2
     set(hAxis(1),'XGrid','on','YGrid','on');
     set(hAxis,'FontSize',opt.fontSize);
 
-    mySaveFig(hFig,['..' filesep 'media' filesep ...
-        'Overprocessing0006_IntegrationalAnalysis_' ...
-        num2str(opt.case,'%04d')]);
-    close(gcf);
+    % mySaveFig(hFig,['..' filesep 'media' filesep ...
+    %     'Overprocessing0006_IntegrationalAnalysis_' ...
+    %     num2str(opt.case,'%04d')]);
+    % close(gcf);
 
 end
 end

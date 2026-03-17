@@ -4,7 +4,15 @@ function Overprocessing0001_SolvingTheProcessingPipeline
 %
 % Reach a desired hypothesis despite random observations.
 %
-% Copyright 2025
+%
+%% Remarks
+%
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -12,6 +20,8 @@ function Overprocessing0001_SolvingTheProcessingPipeline
 
 
 %% Log
+%
+% -- ICNNA v1.3.1
 %
 % 3-Sep-2025: FOE
 %   + File created.
@@ -22,6 +32,11 @@ function Overprocessing0001_SolvingTheProcessingPipeline
 %
 % 9-Sep-2025: FOE
 %   + Added the case 6.
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 

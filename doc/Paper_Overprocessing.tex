@@ -54,9 +54,10 @@
 
 
 
-\title{Overprocessing in functional Near-Infrared Spectroscopy (fNIRS)}
+\title{Overprocessing in neuroimaging processing pipelines, illustrated with functional Near-Infrared Spectroscopy (fNIRS)}
 
 \author[a]{Felipe Orihuela-Espina}
+\author[a]{Robert Ward}
 \affil[a]{University of Birmingham, School of Computer Science, Edgbaston, Birmingham, United Kingdom}
 %\affil[b]{Company Name, Street Address, City, Country}
 
@@ -67,20 +68,20 @@
 \maketitle
 
 \begin{abstract}
-\textbf{Significance}: %Provide the rationale or motivation for the work (i.e., its broad impact).
-Overprocesssing occurs when we exceed on reasonable processing to extract the information from observations. Overprocessing can severely affect interpretation of results, e.g. increasing false positives.\\
-\textbf{Aim}: %Briefly describe the study, tools, or systems used.
-This paper introduces the problem of overprocessing to the fNIRS community.\\
-\textbf{Approach}: %Briefly describe the materials and methods used.
-The theoretical underpinnings revealing the existence of the problem are given, and the problem is formally stated. Two major avenues to approach the problem are presented.\\
-\textbf{Results}: %Provide a core summary of study numbers, analyses, discoveries, or data descriptions.
-The transfer function is discussed as a plausible and non-trivial processing and analysis pipeline that from an arbitrary experimental observation $\color{equationscolor}\mathbf{x}_i$ lands us into the hypothesis $\color{equationscolor}\mathbf{x}_h$. The analysis of such transfer function and the analysis of the problem geometry are discussed as potential ways to constraint the problem.\\
-\textbf{Conclusions}: %An interpretive statement that summarizes the approach and results of the work.
-At present, the fNIRS community lacks criteria to alleviate the risk of overprocessing. This draft intends to raise awareness on this largely unknown issue. 
+ Overprocessing occurs when we exceed reasonable processing to extract information from observations. Overprocessing can severely affect interpretation of results, e.g. increasing false positives. This paper introduces the concept of overprocessing and its associated risk to the neuroimaging community.
+  %\textbf{Methods:}
+ The theoretical underpinnings revealing the existence of the problem are given, and the problem is formally stated. The case is exemplified using fNIRS. 
+ %Synthetic examples and experimental data evidence are presented. Two major avenues to approach the problem are discussed.
+ %\textbf{Results:}
+ The existence of an operation equivalent to some arbitrary processing and analysis pipeline capable of systematically projecting any experimental observation $\color{equationscolor}\mathbf{x}_i$ in neuroimaging into a discretionary hypothesis $\color{equationscolor}\mathbf{x}_h$ is theoretically demonstrated and empirically evidenced over both synthetic examples and experimental data.
+The transfer function is discussed as a plausible non-trivial compliant operation.
+ The analysis of both this transfer function and the problem geometry are discussed as potential ways to constraint the problem.
+ % \textbf{Conclusion:}
+At present, the neuroimaging community lacks criteria to alleviate the risk of overprocessing. This paper intends to raise awareness on this largely unknown issue. 
 \end{abstract}
 
 % Include a list of up to six keywords after the abstract
-\keywords{fNIRS, overprocessing, data analysis, signal processing, transfer function}
+\keywords{fNIRS, overprocessing, data analysis, signal processing, neuroimaging}
 
 % Include email contact information for corresponding author
 {\noindent \footnotesize\textbf{*}Felipe Orihuela-Espina,  \linkable{f.orihuela-espina@bham.ac.uk} }

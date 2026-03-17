@@ -7,8 +7,15 @@ function Overprocessing_StochasticProcesses
 % Sampling from stochastic process illustrated using the inverse
 % transform method (see auxiliary function sampling).
 %
+%% Remarks
 %
-% Copyright 2025
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -17,8 +24,15 @@ function Overprocessing_StochasticProcesses
 
 %% Log
 %
+% -- ICNNA v1.3.1
+%
 % 5-Sep-2025: FOE
 %   + File created.
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 
@@ -126,9 +140,9 @@ legend(hLegend(1,:),{'Hypothesis','Processed data'},'FontSize',opt.fontSize);
     ylabel(hAxis,'[A.U.]','FontSize',opt.fontSize);
 
 
-mySaveFig(hFig,['..' filesep 'media' filesep ...
-        'Overprocessing0002_StochasticProcesses']);
-close(gcf);
+% mySaveFig(hFig,['..' filesep 'media' filesep ...
+%         'Overprocessing0002_StochasticProcesses']);
+% close(gcf);
 
 end
 

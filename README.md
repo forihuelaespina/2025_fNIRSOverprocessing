@@ -1,13 +1,13 @@
-# 2025_fNIRSOverprocessing
-Support for publication Overprocessing in fNIRS.
+# Overprocessing
+Support for Overprocessing publication.
 
 See this repository associated webpage at:
 
-[https://forihuelaespina.github.io/2025_fNIRSOverprocessing/](https://forihuelaespina.github.io/2025_fNIRSOverprocessing/).
+[https://forihuelaespina.github.io/Overprocessing/](https://forihuelaespina.github.io/Overprocessing/).
 
 
 # Reference
 
 Please cite:
 
-Orihuela-Espina, F (2025) "Overprocessing in functional Near-Infrared Spectroscopy (fNIRS)" Submitted to Neurophotonics. Under review.
+Orihuela-Espina, F and Ward, R (2026) "Overprocessing in functional Near-Infrared Spectroscopy (fNIRS)" Submitted to Journal of Ambient Intelligence and Humanized Computing (JAIHC). Under review.

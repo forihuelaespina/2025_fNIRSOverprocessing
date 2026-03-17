@@ -4,7 +4,14 @@ function Overprocessing0005_SegregationalAnalysis
 %
 % Illustrates the overprocessing in the case of segregational analysis.
 %
-% Copyright 2025
+%% Remarks
+%
+% Uses ICNNA v1.4.1beta
+%
+%
+%
+%
+% Copyright 2025-26
 % @author Felipe Orihuela-Espina
 %
 % See also 
@@ -16,6 +23,11 @@ function Overprocessing0005_SegregationalAnalysis
 % 8-Oct-2025: FOE
 %   + File created.
 %
+%
+% -- ICNNA v1.4.1beta
+%
+% 17-Mar-2026: FOE
+%   + Updated for ICNNA v1.4.1beta.
 %
 
 
@@ -144,9 +156,9 @@ set(hAxis,'Box','on');
 set(hAxis(1),'XGrid','on','YGrid','on');
 set(hAxis,'FontSize',opt.fontSize);
 
-mySaveFig(hFig,['..' filesep 'media' filesep ...
-    'Overprocessing0005_SegregationalAnalysis']);
-close(gcf);
+% mySaveFig(hFig,['..' filesep 'media' filesep ...
+%     'Overprocessing0005_SegregationalAnalysis']);
+% close(gcf);
 
 
 end
