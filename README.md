@@ -10,4 +10,4 @@ See this repository associated webpage at:
 
 Please cite:
 
-Orihuela-Espina, F and Ward, R (2026) "Overprocessing in functional Near-Infrared Spectroscopy (fNIRS)" Submitted to Journal of Ambient Intelligence and Humanized Computing (JAIHC). Under review.
+Orihuela-Espina, F and Ward, R (2026) "Overprocessing in neuroimaging processing pipelines, illustrated with functional Near-Infrared Spectroscopy (fNIRS)" Submitted to Journal of Ambient Intelligence and Humanized Computing (JAIHC). Under review.
